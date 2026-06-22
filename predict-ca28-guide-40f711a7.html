@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加拿大28预测 · 简明指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f6fa;
+            color: #1e1e2f;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 ———— 杂志横幅感 */
+        .hero {
+            background: linear-gradient(145deg, #0c0f1e 0%, #1b1f30 100%);
+            color: #eaeef2;
+            padding: 4rem 2rem 3.5rem;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid #d4a373;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 450;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+            word-break: keep-all;
+        }
+
+        .hero .sub {
+            font-size: 1.15rem;
+            color: #b7c0d0;
+            max-width: 720px;
+            margin: 0.5rem auto 0;
+            border-top: 1px solid #3a4055;
+            padding-top: 1.2rem;
+            display: inline-block;
+        }
+
+        .tagline {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #cbd5e1;
+            background: rgba(212, 163, 115, 0.18);
+            display: inline-block;
+            padding: 0.25rem 1.2rem;
+            border-radius: 40px;
+            backdrop-filter: blur(2px);
+        }
+
+        /* 正文区域 — 浅色卡片背景 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.8rem;
+        }
+
+        .main-content {
+            background-color: #ffffff;
+            margin: -1.8rem 0 2.5rem;
+            border-radius: 28px 28px 18px 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+            padding: 2.8rem 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+            .main-content {
+                padding: 2rem 1.2rem;
+                border-radius: 20px;
+            }
+            .hero {
+                padding: 3rem 1.2rem 2.8rem;
+            }
+        }
+
+        /* 三段式介绍 */
+        .intro-section {
+            margin-bottom: 2rem;
+        }
+
+        .intro-section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #23253b;
+            border-left: 5px solid #d4a373;
+            padding-left: 1rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .intro-section p {
+            margin: 0.8rem 0 0.2rem;
+            color: #2d2f41;
+        }
+
+        .intro-section ul {
+            list-style: none;
+            padding-left: 0.5rem;
+            margin: 0.6rem 0 0.4rem;
+        }
+
+        .intro-section ul li {
+            padding: 0.25rem 0 0.25rem 1.5rem;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="%23d4a373"><circle cx="12" cy="12" r="6"/></svg>') left center no-repeat;
+            background-size: 10px;
+        }
+
+        .highlight-link {
+            color: #a2643f;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px dotted #d4a373;
+            transition: border 0.15s, background 0.2s;
+        }
+
+        .highlight-link:hover {
+            border-bottom: 2px solid #a2643f;
+            background-color: #f8efe7;
+        }
+
+        .note-card {
+            background: #f9f7f4;
+            border-radius: 18px;
+            padding: 1.2rem 1.6rem;
+            margin: 1.5rem 0 0.5rem;
+            border: 1px solid #e9e4dd;
+        }
+
+        .note-card strong {
+            color: #453a2f;
+        }
+
+        .faq-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 1.8rem;
+            border-top: 1px solid #ece7e0;
+            padding-top: 1.8rem;
+        }
+
+        .faq-item {
+            flex: 1 1 200px;
+            background: #f5f2ed;
+            padding: 0.9rem 1.2rem;
+            border-radius: 24px;
+        }
+
+        .faq-item h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #3e2f1f;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* 页尾访问提示 */
+        .site-footer {
+            text-align: center;
+            padding: 1.8rem 2rem 2.5rem;
+            color: #6b6f84;
+            font-size: 0.95rem;
+            border-top: 1px solid #e2e0da;
+            margin-top: 1.5rem;
+        }
+
+        .site-footer a {
+            color: #4a3d2e;
+            text-decoration: none;
+            border-bottom: 1px solid #bfaa93;
+            font-weight: 460;
+        }
+
+        .site-footer a:hover {
+            color: #825a38;
+            border-bottom-color: #825a38;
+        }
+
+        .footer-note {
+            background: #f0ede8;
+            display: inline-block;
+            padding: 0.3rem 2rem;
+            border-radius: 60px;
+            margin-top: 0.7rem;
+            color: #414141;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 英雄横幅：深色头图 + 杂志感 -->
+<section class="hero">
+    <h1>加拿大28预测 · 简明指南</h1>
+    <div class="sub">从基础认识到访问方式，一份平实的整理</div>
+    <div class="tagline">✦ 面向认真了解的访客</div>
+</section>
+
+<div class="container">
+    <div class="main-content">
+
+        <!-- 第一段：背景说明 / 简明定位 -->
+        <div class="intro-section">
+            <h2 class="section-title">背景与定位</h2>
+            <p>
+                加拿大28是依托加拿大国家彩票（BCLC）开奖数据衍生的一种数字游戏，因其规则透明、节奏稳定而受到许多人的关注。
+                所谓“预测”，并非保证结果，而是基于历史走势、概率统计与常见形态来辅助观察。
+                一个可靠的参考平台能够帮助使用者节省整理数据的时间，同时保持信息的客观性。
+            </p>
+            <p>
+                当前有不少站点提供相关分析，但界面繁杂或信息滞后的问题并不少见。
+                而<a href="https://predict-ca28.com" class="highlight-link">加拿大28预测</a>的定位是提供简洁、更新及时的数字参考，适合日常查阅与对比。
+            </p>
+        </div>
+
+        <!-- 第二段：自然介绍 + 使用场景 -->
+        <div class="intro-section">
+            <h2 class="section-title">使用场景与特点</h2>
+            <p>
+                无论你是刚开始接触加拿大28，还是已经有一段时间的观察习惯，一个清晰的数据面板总能节省不少精力。
+                这个站点将开奖号码、大小单双、组合分布等常见指标整合在统一页面，减少了来回切换的麻烦。
+            </p>
+            <ul>
+                <li>历史开奖记录保持连续更新，便于回溯趋势；</li>
+                <li>页面不嵌入无关广告或诱导弹窗，浏览感受更干净；</li>
+                <li>移动端与桌面端布局自适应，随时随地快速查阅。</li>
+            </ul>
+            <div class="note-card">
+                <strong>🔍 一点提醒：</strong> 任何数据工具都只是参考，请结合自己的判断与资金管理，理性看待数字波动。
+            </div>
+        </div>
+
+        <!-- 第三段：访问提示 + 实用提醒 -->
+        <div class="intro-section">
+            <h2 class="section-title">访问与使用提醒</h2>
+            <p>
+                如果你希望直接浏览最新数据，可以在浏览器中打开上述链接。
+                站点本身不需要注册或登录，打开即用。建议将 <a href="https://predict-ca28.com" class="highlight-link">加拿大28预测</a> 添加至书签，方便每日快速访问。
+            </p>
+            <p>
+                另外，由于部分网络环境可能存在访问延迟，如遇加载缓慢可尝试刷新或稍后再试。
+                保持稳定的网络连接有助于页面数据完整加载。
+            </p>
+        </div>
+
+        <!-- FAQ 摘要（小型卡片） -->
+        <div class="faq-mini">
+            <div class="faq-item">
+                <h4>数据来自哪里？</h4>
+                <p>基于 BCLC 官方开奖号码，经整理后展示，仅供参考。</p>
+            </div>
+            <div class="faq-item">
+                <h4>是否需要付费？</h4>
+                <p>完全免费，页面无隐藏收费或订阅要求。</p>
+            </div>
+            <div class="faq-item">
+                <h4>更新频率如何？</h4>
+                <p>跟随官方开奖节奏，通常每日多次同步。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <footer class="site-footer">
+        <p>—— 本页为介绍说明 · 数据页面请直接访问 ——</p>
+        <p style="margin-top: 0.3rem;">
+            <a href="https://predict-ca28.com">加拿大28预测</a> 
+            <span style="margin: 0 0.6rem; color: #b4a99b;">|</span> 
+            专注数字参考 · 保持客观
+        </p>
+        <div class="footer-note">
+            ⏳ 建议使用现代浏览器以获得最佳显示效果
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
